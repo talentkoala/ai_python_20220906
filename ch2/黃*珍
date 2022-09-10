@@ -1,0 +1,11 @@
+a=float(input("請輸入身高，單位為公分:"))
+b=float(input("請輸入體重，單位為公斤:"))
+BMI=b/(a*0.01)**2
+if BMI < 18.5:
+    print ("your BMI is",BMI,"您的體重過輕")
+elif 18.5<=BMI<24:
+    print ("your BMI is",BMI,"健康體重")
+elif 25<=BMI<27:
+    print ("your BMI is",BMI,"您的體重過重")
+else:
+    print ("your BMI is",BMI,"肥胖")
