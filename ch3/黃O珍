@@ -1,0 +1,13 @@
+print("五次失敗就會退出遊戲")
+error=0
+while error < 5:
+    a=input("請輸入一個字串")
+    if a!=str:
+        error+=1
+        if error==5:
+            print("失敗五次，退出遊戲")
+        else:
+            print("錯誤"+str(error)+"次，請再輸入字串")
+    else:
+       print("上一個字串是",a)
+       b=input()
