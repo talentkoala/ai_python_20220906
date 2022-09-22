@@ -1,0 +1,13 @@
+a=int(input("請輸入第1個月的支出金額:"))
+b=int(input("請輸入第2個月的支出金額:"))
+c=int(input("請輸入第3個月的支出金額:"))
+d=int(input("請輸入第4個月的支出金額:"))
+def func_ex():
+    s=a+b+c+d
+    m=[a,b,c,d]
+    m.sort()
+    print("支出最多的金額為:",m[-1])
+    print("支出最少的金額為:",m[0])
+    print("支出的總和為:",s)
+    print("支出金額由小到大排序為:",m)
+func_ex()
