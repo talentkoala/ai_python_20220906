@@ -1,0 +1,12 @@
+print("請輸入字串,當您輸入0就代表結束")
+i=[]#所有輸入的字
+palin=[]#所有的回文
+a=input("請輸入:")
+while a!=str(0):
+    i.append(a)  
+    if a==a[::-1]:
+        palin.append(a) 
+    a=input("請輸入:")    
+        
+print("顯示清單內容：",i)
+print("符合回文字串為：",palin)
