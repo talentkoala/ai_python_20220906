@@ -1,0 +1,3 @@
+fruit=map(lambda x:x+"!!!",["apple","banana","papaya","watermelon"])
+x=list(fruit)
+print(x)
