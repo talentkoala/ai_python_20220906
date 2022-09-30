@@ -1,0 +1,13 @@
+budget={"預計開銷:":0}
+remaining=0
+while True:
+    a=input("消費項目:")
+    b=int(input("消費金額:"))
+    remaining+=b
+    if remaining<1000:
+        print("目前消費金額:",remaining)
+        budget.update({a:b})
+    else:
+        print("已經超支了")
+        print(budget)
+        break
