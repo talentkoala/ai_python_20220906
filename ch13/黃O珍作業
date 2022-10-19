@@ -1,0 +1,21 @@
+n=0
+import numpy as np
+a=np.array([8397,8393,8389,8376,8378,8395,8411,8409,8406,8413,8408,8408,8414,8421,8411,8392,8404])
+for k in a:
+    n+=1
+    if n<13:
+        print("民國106年",n,"月總人數:",k)
+    else:
+        print("民國107年",n-12,"月總人數:",k)
+    
+
+c=np.mean(a)
+c1=np.floor(c)
+d=np.median(a)
+e=np.max(a)
+f=np.min(a)
+
+print("人口平均值:",c1)
+print("中位數:",d)
+print("最大值",e)
+print("最小值:",f)
