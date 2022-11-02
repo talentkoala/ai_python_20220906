@@ -1,0 +1,4 @@
+import pandas as pd
+df=pd.read_csv("HW16__Data.csv",encoding="utf8",skiprows=[0],names=list("abcdef"))
+match=int(input("請輸入郵遞區號："))
+print(df[df['b']==match])
